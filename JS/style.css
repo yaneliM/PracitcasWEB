@@ -1,0 +1,48 @@
+.site-header.in{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  
+}
+
+.characters{
+    display: flex ;
+    justify-content: space-evenly;
+    padding: 2rem;
+    height: 30rem;
+    line-height:40px;
+
+    
+}
+.score{
+    display: flex ;
+    justify-content: space-evenly;
+    padding: 2rem;
+    height: 2rem;
+    margin-bottom: 5rem;
+    
+}
+
+.button {
+   margin-top: 8rem;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+height: inherit;
+    font-size: 16px;
+    width: 100;
+    background-color: rgba(0, 0, 0, 0)
+    
+  }
+
+.fin{
+    
+position: absolute ;
+align-content: center;
+
+top: 20%;
+left: 40%;
+
+  }
