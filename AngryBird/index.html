@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ANGRY BIRDS</title>
+</head>
+<body  onload="setImages()">
+ 
+    <button onclick="pig1.detalle()">name</button>
+    <div id="GameArea" class="gameArea"  >
+        
+        <div id="BirdSide" class="bSide">
+            <div id="Buttons" class = "sides">
+                <div class="buttonPack">
+                    <button onclick="red.volar()" class="goButton">GO</button>
+                    <button onclick="red.detalle()" class="detalleButton">Detail</button>
+                </div>
+                <div class="buttonPack">
+                    <button onclick="blue.volar()" class="goButton">GO</button>
+                    <button onclick="blue.detalle()" class="detalleButton">Detail</button>
+                </div>
+                <div class="buttonPack">
+                    <button onclick="yellow.volar()" class="goButton">GO</button>
+                    <button onclick="yellow.detalle()" class="detalleButton">Detail</button>
+                </div>
+            </div> 
+            <div id="Birds" class = "sides">
+                <div id="red" class="character"></div>
+                <div id="blue" class="character"></div>
+                <div id="yellow" class="character"></div>
+            </div>
+        </div>
+        <div id="PigSide" class="bSide">
+            <div id="Buttons" class = "sides">
+                <div class="buttonPack">
+                    <button onclick="pig1.detalle()" class="detalleButton">Detail</button>
+                </div>
+                <div class="buttonPack">
+                    <button onclick="pig2.detalle()" class="detalleButton">Detail</button>
+                </div>
+                <div class="buttonPack">
+                    <button onclick="pig3.detalle()" class="detalleButton">Detail</button>
+                </div>
+            </div> 
+
+            <div id="Pigs" class="sides">
+                <div id="pig1" class="character" ></div>
+                <div id="pig2" class="character"></div>
+                <div id="pig3" class="character"></div>
+            </div>
+
+        </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
