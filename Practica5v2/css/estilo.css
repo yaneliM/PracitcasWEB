@@ -1,0 +1,39 @@
+body{
+    background: rgb(53, 157, 253);
+}
+
+
+.formularioDes{
+    background: rgb(212, 212, 212);
+    margin: 5rem 5rem 0rem 5rem;
+}
+
+
+
+
+#setComment{
+    width: 50%;
+    height: 15rem;
+}
+
+
+#submitBtn{
+    
+}
+
+dl{
+    background: rgb(94, 94, 94);
+    border-radius: .2rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+dd{
+    color: aquamarine;
+}
+
+.displayComment{
+    background: rgb(212, 212, 212);
+    margin: 5rem 5rem 0rem 5rem;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <div class="cont row">
+        <div>
+            <h2>Contactanos</h2>
+            <div class="row">
+                <div class="col" id="nombrePart">
+                    <label for="">Nombre</label>
+                    <input class="form-control form-control-lg" type="text" name="Nombre" id="nombreTxt" placeholder="Introduce Nombre">
+                </div>
+                <div class="col" id="apellidoPart">
+                    <label for="">Apellido</label>
+                    <input class="form-control form-control-lg" type="text" name="Apellido" id="apellidoTxt" placeholder="Introduce Apellido">
+
+                </div>
+            </div>
+
+            <div id="edadPart">
+                <label for="">Edad</label>
+                <div id="anioPartText">
+                    <select name="ageDropDown" id="ageDropDown" class="custom-select">
+                            
+                    </select>
+                </div>
+
+            </div>
+
+            <div id="correoPart">
+                <label for="">Correo</label>
+                <div id="correoPartText">
+                    <input class="form-control form-control-lg" type="text" name="Correo" id="correoTxt" placeholder="Introduce Correo">
+                </div>
+
+            </div>
+
+            <div id="reazonPart">
+                <label for="">Motivo</label>
+                <div id="fstRadio" class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="nam" id="radio1" value="Funcionalidad" checked>
+                    <label class="custom-control-label" for="radio1">Funcionalidad</label>
+                </div>
+                <div id="scnRadio" class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="nam" id="radio2" value="Descarga">
+                    <label class="custom-control-label" for="radio2">Descarga</label>
+                </div>
+                <div id="trdRadio" class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="nam" id="radio3" value="Duda">
+                    <label class="custom-control-label" for="radio3">Duda</label>
+                </div>
+                <div id="frtRadio" class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" name="nam" id="radio4" value="Otros">
+                    <label class="custom-control-label" for="radio4">Otros</label>
+                </div>
+
+            </div>
+
+            <div id="commentPart">
+                <label for="">Comentario</label>
+                <div id="commentPartText">
+                    <textarea class="form-control form-control-lg" id="setComment" placeholder="Comentario..." rows="0" cols="0" name="comment" form="usrform"></textarea>
+                </div>
+            </div>
+            <div id="submitBtn">
+                <button type="button" onclick="submit()" class="btn btn-primary">Submit</button>
+            </div>
+
+        </div>
+
+
+        <h2 style="padding-top: 2rem;">Comentarios</h2>
+
+        <div class="bars">
+
+            <div>
+                Motivo:
+                <div id="filter" style="width: 12rem; padding-right: 2rem;">
+                    <select name="sortBy" id="sortBy" class="custom-select">
+                        <option value="Funcionalidad"> Funcionalidad</option>     
+                        <option value="Descarga"> Descarga</option>
+                        <option value="Duda"> Duda</option>
+                        <option value="Otros"> Otros</option>      
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-group ">
+                <button class="btn btn-primary" type="button" onclick="search()">Search</button>
+            </div>
+
+            <button class="btn btn-primary" type="button" id="eraseBTN" onclick="borrar()">Borrar</button>
+
+        </div>
+
+
+        <dl class="comments" id="comment">
+
+        </dl>
+
+
+
+    </div>
+    <div class="cont">
+
+
+
+    </div>
+
+
+
+    <footer>
+        <div class="pieDePagina">
+
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
